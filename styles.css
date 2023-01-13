@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+:root {
+    --header-height: 3.5rem;
+    --first-color: hsl(354, 78%, 60%);
+    --button-color: hsl(0, 0%, 17%);
+    --button-color-alt: hsl(0, 0%, 21%);
+    --card-color: hsl(0, 0%, 90%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --text-color-light: hsl(0, 0%, 55%);
+    --body-color: hsl(206, 4%, 97%);
+    --container-color: #fff;
+    --border-color: hsl(0, 0%, 94%);
+    --aqua:aqua;
+    --gray:gray;
+    --bisque:bisque;
+    --black:black;
+    --hover:hsl(0, 0%, 95%);
+    
+}
+ 
+body.dark{
+    --first-color:hsl(182, 53%, 74%);
+    --bisque:hsl(0, 0%, 20%);
+    --body-color: hsl(249, 19%, 14%);
+    --black:hsl(0, 0%, 75%);
+    --title-color:hsl(0, 0%, 95%);
+    --card-color:hsla(246, 16%, 5%, .5);
+    --hover:black;
+}
+.bx,
+.etiqueta,
+.title,
+.pie,
+.btn,
+.luna{
+    color: var(--title-color);
+}
+
+.pie{
+    fill: var(--title-color);
+}
+.text0{
+    color:var(--black);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.raya,
+.etiqueta{
+    background-color: var(--title-color);
+}
+.tex{
+    color:var(--black);
+}
+
+body{
+    background-color: var(--body-color)
+}
+
+.luna{
+    cursor: pointer;
+}
+.carrito{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.carri{
+    position: relative;
+    cursor: pointer;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    fill:var(--title-color);
+
+}
+.logo1{
+    position: relative;
+    right: 60px;
+}
+.text0{
+    cursor: pointer;
+}
+.text0:hover{
+    color:var(--first-color);
+}
+.fixed{
+    width: 100%;
+    position:fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+.fixed1{
+    transition: .3s;
+    background-color:var(--bisque);
+}
+.izq{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.der{
+    display: flex;
+    gap: 2rem;
+}
+.compras{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--aqua);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sec2{
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.cua1{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.new{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.title{
+    font-size: 2rem;
+}
+.tex{
+    font-size: 1.5rem;
+}
+.precio{
+    font-size:2rem;
+    color: var(--first-color);  
+}
+
+.contdiscoadd{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+.discover{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--gray);
+    width: 170px;
+    cursor: pointer;
+    transition: .3s;
+}
+.discover:hover{
+    background-color: var(--text-color);
+    color:var(--title-color);
+}
+
+.card{
+    width: 230px;
+height: 80px;
+background-color: var(--card-color);
+color: var(--black);
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: .3s;
+}
+.card:hover{
+    background-color: var(--first-color);
+    color: var(--hover);
+}
+.camiseta{
+    background-color:var(--first-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 2rem;
+}
+.raya{
+    width: 1px;
+    height: 60px;
+    background-color: var(--title-color);
+}
+.Productsop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerda{
+    display: flex;
+    width: 1500px;
+    overflow: hidden;
+    gap: 4rem;
+    margin: 0 auto;
+    transition: .3s;
+
+
+}
+.imagen{
+    width: 100%;
+    overflow-clip-margin:content-box;
+    overflow: clip;
+}
+.gancho{
+    position: relative;
+    z-index: 2;
+    width:420px;
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.etiqueta{
+    background-color:var(--bisque);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+}
+.prest{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.linea{
+    height: 15px;
+    width: 2px;
+    background-color: black;
+}
+
+.price{
+    font-size: 2rem;
+}
+.prenda{
+    font-size: 1.5rem;
+}
+.circle{
+position: absolute;
+right: 10px;
+top: 390px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color: var(--container-color);
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: .3s;
+}
+.f:hover{
+    background-color: var(--first-color);
+    fill: black;
+}
+.h{
+    width: 30px;
+    height: 30px;
+}
+.redes{
+    width: 20px;
+}
+
+.pie{
+    height: 400px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bisque);
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.carro{  
+    position: fixed;
+    height: 100vh;
+    width: 470px;
+    background-color:var(--hover);
+    color: var(--title-color);
+    fill: var(--title-color);
+    right: 0;
+    z-index: 2000;
+    padding: 4rem 1rem 1rem 1rem;
+    transform: translateX(100%);
+}
+.carro__ocul{
+transform: translateX(0);
+}
+
+
+
+.pie1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10rem;
+    
+}
+.raya3{
+    height: 2px;
+    background-color: white;
+    width: 1000px;
+}
+.x{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 40px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.gancho1{
+    display: flex;
+    border-radius: 1rem;
+    position: relative;
+}
+.imagen1{
+    height: 120px;
+    width: 120px;
+}
+.etiqueta1{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.gancho1{
+    background-color: var(--bisque);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 170px;
+    
+
+}
+.contentcar{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.iconos{
+    display: flex;
+    gap: 1rem;
+    
+}
+.poin{
+    cursor: pointer;
+}
+
+.stock1{
+   font-size: 1.5rem;
+}
+
+.j{
+    height: 30px;
+    width: 30px;
+}
+
+
+.tu{
+    font-size: 2rem;
+    position: relative;
+    right: -30px; 
+}
+.total{
+font-size:1.5rem;
+color: var(--title-color);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: absolute;
+height: 120px;
+width: 440px;
+background-color:var(--bisque);
+border-radius: 1rem;
+color: var(--title-color);
+}
+.compras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poin2{
+    position: absolute;
+    right: 20px;
+}
+
+
+
